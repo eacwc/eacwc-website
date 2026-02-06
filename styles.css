@@ -81,11 +81,17 @@ body {
 }
 
 .nav-brand a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    letter-spacing: -0.5px;
+}
+
+.nav-logo {
+    height: 48px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-menu {
@@ -234,6 +240,15 @@ body {
     z-index: 1;
     max-width: 800px;
     animation: fadeInUp 0.8s ease;
+}
+
+.hero-logo {
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
 }
 
 .hero-title {
@@ -542,6 +557,14 @@ body {
     gap: 2rem;
 }
 
+.footer-logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
 .footer-brand h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -578,6 +601,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-logo {
+        height: 40px;
+        max-width: 140px;
+    }
+
+    .hero-logo {
+        max-width: 260px;
+        margin-bottom: 1.5rem;
+    }
+
     .mobile-menu-toggle {
         display: flex;
     }
@@ -645,6 +678,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    .nav-logo {
+        height: 36px;
+        max-width: 120px;
+    }
+
+    .hero-logo {
+        max-width: 220px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
