@@ -420,6 +420,11 @@ body {
     text-align: left;
 }
 
+.support-grid > * {
+    width: 100%;
+    min-width: 0;
+}
+
 .support-item {
     background: white;
     padding: 2rem;
