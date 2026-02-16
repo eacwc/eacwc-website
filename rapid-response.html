@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hagerstown Rapid Response Signal Group - Community mutual aid and rapid response coordination in Hagerstown, Maryland.">
+    <title>Hagerstown Rapid Response | EACWC</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-hero {
+            padding: 140px 20px 80px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+            color: white;
+        }
+        .page-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .page-hero .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+        }
+        .rapid-response-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .rapid-response-intro {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .little-heiskell-img {
+            flex-shrink: 0;
+            max-width: 280px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+        .little-heiskell-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+        .little-heiskell-caption {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        .rapid-response-intro-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .rapid-response-intro-text p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .join-us-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+        [data-theme="dark"] .join-us-section {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+        }
+        .join-us-content {
+            flex: 1;
+            min-width: 200px;
+        }
+        .join-us-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        .join-us-content p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .join-us-qr {
+            flex-shrink: 0;
+            width: 160px;
+            height: 160px;
+        }
+        .join-us-qr img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            .rapid-response-intro {
+                flex-direction: column;
+            }
+            .little-heiskell-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Empathy+Action=Change - Phoenix logo" class="nav-logo">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#mission" class="nav-link">Mission</a></li>
+                <li><a href="index.html#support" class="nav-link">Support</a></li>
+                <li><a href="rapid-response.html" class="nav-link">Rapid Response</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Hagerstown Rapid Response</h1>
+            <p class="subtitle">Signal Group for community mutual aid and crisis support</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            
+            <div class="rapid-response-content">
+                <div class="rapid-response-intro">
+                    <div class="little-heiskell-img">
+                        <img src="assets/images/littleHeiskell.png" alt="Little Heiskell - Historic Hagerstown weathervane symbol of Hagerstown, Maryland">
+                        <p class="little-heiskell-caption">Little Heiskell - Hagerstown's historic symbol</p>
+                    </div>
+                    <div class="rapid-response-intro-text">
+                        <p class="lead-text" style="margin-bottom: 1rem;">
+                            Hagerstown Rapid Response is a network of neighbors who show up when something can't wait. Building on Hub City's long tradition of community care, we use encrypted Signal communication to share information quickly, coordinate support, and respond to urgent needs with dignity and respect.
+                        </p>
+                        <p>
+                            When threats to safety or stability arise, including immigration enforcement activity, our network mobilizes. We monitor ICE‑related alerts, support impacted families, and help ensure no one faces intimidation, detention, or crisis alone.
+                        </p>
+                        <p>
+                            From immediate assistance to safety support to navigating fast‑moving situations, we respond together so that no one in Hagerstown is left without help.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="join-us-section">
+                    <div class="join-us-content">
+                        <h3>Join Us</h3>
+                        <p>Scan the QR code or tap the link to join our Signal group.</p>
+                        <a href="https://signal.group/#CjQKIM281krHadlC7--aDT7RCi9Pqb0RgjFMxr1K44rxSJ5GEhDlZROuRST8oj2Vanfnftui" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join Signal Group</a>
+                    </div>
+                    <div class="join-us-qr">
+                        <img src="assets/images/qr-code.png" alt="QR code to join Hagerstown Rapid Response Signal group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Empathy+Action=Change - Phoenix logo" class="footer-logo">
+                    <h3>Empathy + Action = Change</h3>
+                    <p>Building stronger communities through empathy and action.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#mission">Mission</a>
+                    <a href="index.html#support">Support</a>
+                    <a href="rapid-response.html">Rapid Response</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Empathy+Action=Change. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
